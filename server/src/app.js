@@ -22,4 +22,10 @@ app.get('/status', (req, res) => {
 	})
 })
 
+app.post('/register', (req, res) => {
+	res.send({
+		message: `your user ${req.body.login} was registeres`
+	})
+})
+
 app.listen(process.env.PORT || 8081)
